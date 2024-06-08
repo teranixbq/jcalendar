@@ -1,0 +1,14 @@
+{
+  "name": "jcalendar",
+  "version": "1.0.0",
+  "description": "Generate annual calendar",
+  "main": "index.js",
+  "scripts": {
+    "start":"node api/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.9"
+  }
+}
