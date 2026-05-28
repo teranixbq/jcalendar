@@ -1,11 +1,7 @@
+const express = require('express');
+const router = express.Router();
 const { generateAnnualCalendar } = require("../handler/handler");
 
-const routeAPI = [
-    {
-        method: 'GET',
-        path: '/',
-        handler: generateAnnualCalendar
-    },
-];
+router.get('/', generateAnnualCalendar);
 
-module.exports = { routeAPI };
+module.exports = { routeAPI: router };

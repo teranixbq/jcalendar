@@ -1,5 +1,5 @@
-const generateAnnualCalendar = (request, h) => {
-    let { year } = request.query;
+const generateAnnualCalendar = (req, res) => {
+    let { year } = req.query;
 
     if (!year || year == 0) {
         year = new Date().getFullYear();
@@ -36,7 +36,7 @@ const generateAnnualCalendar = (request, h) => {
         data: data
     };
 
-    return h.response(response).code(200);
+    return res.status(200).json(response);
 }
 
 module.exports = {

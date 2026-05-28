@@ -4,11 +4,12 @@
   "description": "Generate annual calendar",
   "main": "index.js",
   "scripts": {
-    "start":"node api/index.js"
+    "start": "node api/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@hapi/hapi": "^21.3.9"
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
   }
 }
